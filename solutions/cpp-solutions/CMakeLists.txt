@@ -5,12 +5,6 @@ project(CPPSolutions LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Use Ninja as the generator (optional)
-set(CMAKE_GENERATOR "Ninja" CACHE INTERNAL "")
-
-# Enable testing
-enable_testing()
-
 # Add library target (sources directly listed)
 add_library(leetcode_solutions STATIC
     src/1-two-sum.cpp
@@ -35,6 +29,9 @@ target_link_libraries(leetcode_tests
     GTest::GTest
     GTest::Main
 )
+
+# Enable testing
+enable_testing()
 
 # Add the test to CTest
 add_test(NAME leetcode_tests COMMAND leetcode_tests)
