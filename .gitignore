@@ -2,8 +2,14 @@
 
 1_Two_sum/
 
-# ./solutions/cpp-solutions
-./solutions/cpp-solutions/build/
+# ./solutions/cpp-solutions/
+solutions/cpp-solutions/build/
 
-# ./solutions/c-solutions
-./solutions/c-solutions/build/
+# ./solutions/c-solutions/
+solutions/c-solutions/build/
+
+# ./solutions/CSharpSolutions/
+solutions/CSharpSolutions/CSharpSolutions/obj/
+solutions/CSharpSolutions/CSharpSolutions/bin/
+solutions/CSharpSolutions/CSharpSolutions.Tests/obj/
+solutions/CSharpSolutions/CSharpSolutions.Tests/bin/
