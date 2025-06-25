@@ -33,7 +33,7 @@ vector<int> Solution::twoSumMap(const std::vector<int>& nums, int target) {
     for (int i = 0; i < nums.size(); i++) {
         const int desired = target - nums[i];
         if (processedNums.contains(desired))
-            return {i, processedNums[desired]};
+            return {processedNums[desired], i};
         processedNums[nums[i]] = i;
     }
     return {};
