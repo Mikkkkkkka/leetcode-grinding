@@ -13,3 +13,6 @@ solutions/CSharpSolutions/CSharpSolutions/obj/
 solutions/CSharpSolutions/CSharpSolutions/bin/
 solutions/CSharpSolutions/CSharpSolutions.Tests/obj/
 solutions/CSharpSolutions/CSharpSolutions.Tests/bin/
+
+# ./solutions/java-solutions/
+solutions/java-solutions/target
