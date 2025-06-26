@@ -16,3 +16,6 @@ solutions/CSharpSolutions/CSharpSolutions.Tests/bin/
 
 # ./solutions/java-solutions/
 solutions/java-solutions/target
+
+# ./solutions/javascript-solutions/
+solutions/javascript-solutions/node_modules/
