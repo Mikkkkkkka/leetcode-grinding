@@ -23,3 +23,6 @@ solutions/javascript-solutions/node_modules/
 # ./solutions/typescript-solutions/
 solutions/typescript-solutions/node_modules/
 solutions/typescript-solutions/dist/
+
+# ./solutions/python3_solutions/
+solutions/python3_solutions/**/__pycache__/

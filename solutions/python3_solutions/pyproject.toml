@@ -1,0 +1,7 @@
+[project]
+name = "python3_solutions"
+version = "0.1.0"
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+testpaths = ["tests"]
