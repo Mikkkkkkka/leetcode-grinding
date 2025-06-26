@@ -1,7 +1,5 @@
 .vscode/
 
-1_Two_sum/
-
 # ./solutions/cpp-solutions/
 solutions/cpp-solutions/build/
 
@@ -26,3 +24,6 @@ solutions/typescript-solutions/dist/
 
 # ./solutions/python3_solutions/
 solutions/python3_solutions/**/__pycache__/
+
+# ./solutions/rust-solutions/
+solutions/rust-solutions/target/
