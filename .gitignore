@@ -19,3 +19,7 @@ solutions/java-solutions/target
 
 # ./solutions/javascript-solutions/
 solutions/javascript-solutions/node_modules/
+
+# ./solutions/typescript-solutions/
+solutions/typescript-solutions/node_modules/
+solutions/typescript-solutions/dist/
