@@ -3,7 +3,7 @@
  * @param {number} target 
  * @returns {number[]}
  */
-var twoSum = function(nums, target) {
+export function twoSum(nums, target) {
     for (let i = 0; i < nums.length - 1; i++)
         for (let j = i + 1; j < nums.length; j++)
             if (nums[i] + nums[j] == target)
@@ -11,4 +11,3 @@ var twoSum = function(nums, target) {
     throw new Error('No solution found');
 }
 
-export { twoSum };
