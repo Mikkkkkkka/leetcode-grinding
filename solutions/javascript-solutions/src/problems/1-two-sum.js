@@ -1,4 +1,4 @@
-import { binarySearch } from "./utils.js";
+import { binarySearch } from "../utils.js";
 
 /**
  * @param {number[]} nums 
@@ -24,15 +24,15 @@ export function twoSumSort(nums, target) {
         numsWithIndices.push({ value: nums[i], index: i });
     numsWithIndices.sort((a, b) => a.value - b.value);
     for (let i = 0; i < nums.length; i++) {
-        let desired = target - numsWithIndices[i].value;
-        let found = binarySearch(numsWithIndices, i + 1, nums.length - 1, { value: desired }, (a, b) => a.value - b.value);
-        if (found > 0) return [numsWithIndices[i].index, numsWithIndices[found].index];
+        const desired = target - numsWithIndices[i].value;
+        const found = binarySearch(numsWithIndices, { value: desired }, i + 1, nums.length - 1, (a, b) => a.value - b.value);
+        if (found > 0)
+            return [numsWithIndices[i].index, numsWithIndices[found].index];
     }
     throw new Error('No solution found');
 }
 
 /**
- * 
  * @param {number[]} nums 
  * @param {number} target 
  * @returns {number[]}
