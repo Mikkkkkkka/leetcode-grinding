@@ -2,6 +2,7 @@ package p1_two_sum
 
 import (
 	"reflect"
+	"slices"
 	"testing"
 )
 
@@ -39,8 +40,17 @@ func TestTwoSum(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if result := TwoSum(tt.nums, tt.target); !reflect.DeepEqual(result, tt.expected) {
-				t.Errorf("TwoSum() = %v, expected %v", result, tt.expected)
+			result := TwoSumBrute(tt.nums, tt.target)
+			if slices.Sort(result); !reflect.DeepEqual(result, tt.expected) {
+				t.Errorf("TwoSumBrute() = %v, expected %v", result, tt.expected)
+			}
+			result = TwoSumSort(tt.nums, tt.target)
+			if slices.Sort(result); !reflect.DeepEqual(result, tt.expected) {
+				t.Errorf("TwoSumSort() = %v, expected %v", result, tt.expected)
+			}
+			result = TwoSumHash(tt.nums, tt.target)
+			if slices.Sort(result); !reflect.DeepEqual(result, tt.expected) {
+				t.Errorf("TwoSumSort() = %v, expected %v", result, tt.expected)
 			}
 		})
 	}
