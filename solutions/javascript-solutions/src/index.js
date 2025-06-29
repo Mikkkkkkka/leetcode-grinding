@@ -1,1 +1,1 @@
-export * from './solutions/1-two-sum.js'
+export * from './problems/1-two-sum.js'

@@ -1,4 +1,4 @@
-#include "leetcode/1-two-sum.h"
+#include "problems/1-two-sum.h"
 #include <gtest/gtest.h>
 
 TEST(_1TwoSumTest, TestCase1) {

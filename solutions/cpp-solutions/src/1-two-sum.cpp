@@ -1,4 +1,4 @@
-#include "leetcode/1-two-sum.h"
+#include "problems/1-two-sum.h"
 #include <algorithm>
 #include <unordered_map>
 

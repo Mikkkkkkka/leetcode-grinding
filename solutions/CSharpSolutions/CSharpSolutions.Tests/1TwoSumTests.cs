@@ -1,6 +1,6 @@
 ﻿namespace CSharpSolutions.Tests;
 
-using CSharpSolutions.LeetCode;
+using CSharpSolutions.Problems;
 
 public class _1TwoSumTests
 {

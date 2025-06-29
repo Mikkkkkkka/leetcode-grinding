@@ -1,4 +1,4 @@
-package com.mikkkkkkka.solutions;
+package com.mikkkkkkka.problems;
 
 public class _1TwoSum {
     public static int[] twoSum(int[] nums, int target) {

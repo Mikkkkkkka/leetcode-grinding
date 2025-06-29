@@ -1,4 +1,4 @@
-﻿namespace CSharpSolutions.LeetCode;
+﻿namespace CSharpSolutions.Problems;
 
 public class _1TwoSum
 {

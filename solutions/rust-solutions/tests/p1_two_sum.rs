@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use rust_solutions::p1_two_sum::*;
+    use rust_solutions::problems::p1_two_sum::*;
 
     #[test]
     fn two_sum_testcase_1() {

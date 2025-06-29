@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
-import { twoSum } from '../../src/solutions/1-two-sum.js';
+import { twoSum } from '../../src/problems/1-two-sum.js';
 
 describe('twoSum', () => {
     it('should return indices of two numbers that add up to target', () => {

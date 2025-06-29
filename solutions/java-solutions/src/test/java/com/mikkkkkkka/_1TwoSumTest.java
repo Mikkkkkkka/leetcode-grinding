@@ -3,7 +3,7 @@ package com.mikkkkkkka;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.mikkkkkkka.solutions._1TwoSum;
+import com.mikkkkkkka.problems._1TwoSum;
 
 public class _1TwoSumTest {
     @Test

@@ -1,5 +1,5 @@
 import pytest
-import solutions.p1_two_sum as p1
+import problems.p1_two_sum as p1
 
 
 class Test1TwoSum:
@@ -18,7 +18,7 @@ class Test1TwoSum:
     def test_case_3(self):
         nums = [3, 3]
         target = 6
-        expected = [1, 2]
+        expected = [0, 1]
         assert p1.twoSum(nums, target) == expected
         
     def test_throws_on_no_solution(self):
