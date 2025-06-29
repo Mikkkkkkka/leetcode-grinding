@@ -26,6 +26,7 @@ solutions/typescript-solutions/dist/
 
 # ./solutions/python3_solutions/
 solutions/python3_solutions/**/__pycache__/
+solutions/python3_solutions/.pytest_cache/
 
 # ./solutions/rust-solutions/
 solutions/rust-solutions/target/
