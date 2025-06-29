@@ -10,7 +10,9 @@ public class _1TwoSumTests
     [InlineData(new int[] { 3, 3 }, 6, new int[] { 0, 1 })]
     public void TestCases(int[] nums, int target, int[] expected)
     {
-        Assert.Equal(expected, _1TwoSum.TwoSum(nums, target));
+        Assert.Equal(expected, _1TwoSum.TwoSumBrute(nums, target));
+        Assert.Equal(expected, _1TwoSum.TwoSumSort(nums, target));
+        Assert.Equal(expected, _1TwoSum.TwoSumHash(nums, target));
     }
 
     [Fact]
@@ -19,6 +21,8 @@ public class _1TwoSumTests
         int[] nums = [1, 2, 3];
         int target = 6;
 
-        Assert.Throws<ArgumentException>(() => _1TwoSum.TwoSum(nums, target));
+        Assert.Throws<ArgumentException>(() => _1TwoSum.TwoSumBrute(nums, target));
+        Assert.Throws<ArgumentException>(() => _1TwoSum.TwoSumSort(nums, target));
+        Assert.Throws<ArgumentException>(() => _1TwoSum.TwoSumHash(nums, target));
     }
 }
