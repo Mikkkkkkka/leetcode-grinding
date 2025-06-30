@@ -21,3 +21,14 @@ export function twoSumSort(nums: number[], target: number): number[] {
     }
     throw new Error('No solution found');
 }
+
+export function twoSumHash(nums: number[], target: number): number[] {
+    const processedNums: Map<number, number> = new Map();
+    for (let i = 0; i < nums.length; i++) {
+        const j = processedNums.get(target - nums[i]);
+        if (j != undefined)
+            return [j, i]
+        processedNums.set(nums[i], i)
+    }
+    throw new Error('No solution found');
+}

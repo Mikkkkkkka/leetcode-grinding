@@ -1,7 +1,6 @@
 #ifndef _1_TWO_SUM_H
 #define _1_TWO_SUM_H
 
-#include <string>
 #include <vector>
 
 namespace _1TwoSum {

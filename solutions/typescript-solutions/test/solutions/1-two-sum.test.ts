@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
 import { strict as assert } from 'node:assert';
-import { twoSumBrute, twoSumSort } from '../../src/problems/1-two-sum.js';
+import { twoSumBrute, twoSumSort, twoSumHash } from '../../src/problems/1-two-sum.js';
 
 describe('twoSum', () => {
     it('1st test case', () => {
@@ -9,6 +9,7 @@ describe('twoSum', () => {
         const expected = [0, 1];
         assert.deepEqual(twoSumBrute(nums, target), expected);
         assert.deepEqual(twoSumSort(nums, target), expected);
+        assert.deepEqual(twoSumHash(nums, target), expected);
     });
 
     it('2nd test case', () => {
@@ -17,6 +18,7 @@ describe('twoSum', () => {
         const expected = [1, 2];
         assert.deepEqual(twoSumBrute(nums, target), expected);
         assert.deepEqual(twoSumSort(nums, target), expected);
+        assert.deepEqual(twoSumHash(nums, target), expected);
     });
 
     it('3nd test case', () => {
@@ -25,6 +27,7 @@ describe('twoSum', () => {
         const expected = [0, 1];
         assert.deepEqual(twoSumBrute(nums, target), expected);
         assert.deepEqual(twoSumSort(nums, target), expected);
+        assert.deepEqual(twoSumHash(nums, target), expected);
     });
 
     it('throws error when no solutions', () => {
@@ -32,5 +35,6 @@ describe('twoSum', () => {
         const target = 6;
         assert.throws(() => twoSumBrute(nums, target));
         assert.throws(() => twoSumSort(nums, target));
+        assert.throws(() => twoSumHash(nums, target));
     });
 });
